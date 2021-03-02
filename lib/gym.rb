@@ -9,7 +9,6 @@ class Gym
     @@all << self 
   end
 
-
   def self.all
     @@all
   end 
@@ -25,12 +24,10 @@ class Gym
   def all_names
    Membership.all.select {|membership| membership.lifter if membership.gym == self}.map {|membership| membership.lifter.name}
   end 
-
  
   def combined_lift_total
    all_lifters.map{|lifter| lifter.lift_total }.sum
   end 
-
 
 end 
 

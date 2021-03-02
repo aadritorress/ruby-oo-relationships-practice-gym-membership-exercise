@@ -15,7 +15,6 @@ class Membership
     @@all 
   end 
 
-
 end
 
 

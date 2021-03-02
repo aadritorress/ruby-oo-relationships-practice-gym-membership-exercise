@@ -31,7 +31,6 @@ class Lifter
     Membership.new(cost, gym, lifter)
   end 
 
-
 end
 
 
